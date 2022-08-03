@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#37474F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="h-56 flex flex-col items-center justify-center bg-primary">
+        <div class="text-4xl text-white title-text">Images Fetched by Fetch from Local Data
+        </div>
+        <div class="flex flex-row justify-between w-1/4 mt-4">
+            <button class="bg-gray-400 px-4 py-1 rounded text-white" id="localData">Local data</button>
+            <button class="bg-[#FF7043]  px-4 py-1 rounded text-white" id="picsumData">Picsum API</button>
+        </div>
+    </div>
+    <div class="posts px-12 py-8 gap-8 grid grid-cols-3">
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
